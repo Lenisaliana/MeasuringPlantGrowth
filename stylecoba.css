@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+}
+
+.button-ph{
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.btn-ph{
+    width: 100%;
+}
