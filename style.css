@@ -121,6 +121,30 @@ body {
     padding: 10px 20px;
 }
 
+.button-bottom{
+    padding-top: 10px;
+}
+
+.child-left{
+    border-right: 5px solid black;
+    width: 300px;
+}
+
+#blank-1{
+    width: 40px;
+    border-radius: 25%;
+    border-width: 1px;
+}
+
+.btn.back{
+    margin: 5px;
+}
+
+.btn.next2{
+    margin: 5px;
+}
+
+
 @media( min-width: 600px){
     .container-dua {
         display: flex;
@@ -128,6 +152,7 @@ body {
     }
 
     .btn{
+        padding: 5px 10px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         border-top-right-radius: 0;
@@ -175,14 +200,25 @@ body {
         display: flex;
     }
 
-    .child-left{
-        border-right: 5px solid black;
-        width: 300px;
+    .button-bottom{
+        display : flex;
+        justify-content: center;
     }
 
-    #blank-1{
-        width: 40px;
-        border-radius: 25%;
-        border-width: 1px;
+    .btn.back{
+        width: 60px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .btn.next2{
+        
+        width: 60px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 }

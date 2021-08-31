@@ -13,3 +13,9 @@ function ph7() {
 function ph8() {
     document.getElementById('changeImage').innerHTML='<img src="img/ph8.png">';
 } 
+function next(){
+    window.location.href="screen2.html";
+}
+function back(){
+    window.location.href="screen1.html";
+}
