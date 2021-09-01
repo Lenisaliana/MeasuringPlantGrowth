@@ -64,78 +64,70 @@
             </div>
         </div>
 
-        <div class="bottom">
-                <div class="child-left">
+        <div class="bottom-screen3">
+                <div class="child-left2">
                     <h3>Fill in the blank</h3>
-                    <h1>A</h1>
+                    <h1>B</h1>
                 </div>
-                <div class="child-right">
-                    <p>Which data did Hakkim record wrongly? 
-                        You may observe how Hakkim measures the height of the plants 
-                        by moving the slider along the pH scale.</p>
-                    <p>pH <input type="text" id="blank-1" oninput="blank()">. 
-                        The reading should be <input type="text" id="blank-2" oninput="blank()"> cm instead of <input type="text" id="blank-3" oninput="blank()"> cm.</p>
+                <div class="child-right2">
+                    <p>Which pH is most suitable for the plant? Support your answer with data from Table 1</p>
+                    <p>pH <input type="text" id="blank-4" oninput="blank2()">. The plant grew the <input type="text" id="blank-5" oninput="blank2()"> (tallest / shortest) at this pH.</p>
                 </div>
         </div>
 
         <div class="button-bottom">
             <div class="button-right">
-                 <a onclick="back()"><button class="btn back">&#10094;</button></a>
-            </div>
-            <div class="button-left">
-             <button class="btn next2"  id="next2" disabled>&#10095;</button>
+                 <button class="btn back" id="back2" disabled>&#10094;</button>
             </div>
         </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Observe how Hakkim measures the height of the plant at various pH. 
-        Check this against the data he recorded in Table 1.</p>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Plants need suitable pH to grow well.</p>
+        </div>
+  
   </div>
-
-</div>
-
+        
     </div>
-    
-    
+
     <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("next2");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
+        // Get the modal
+        var modal = document.getElementById("myModal");
     
-    var b1 = document.getElementById("blank-1").value;
-    var b2 = document.getElementById("blank-2").value;
-    var b3 = document.getElementById("blank-3").value;
-    if(b1=="8.0" && b2=="14.0" && b3=="23.0"){
-        window.location.href="screen3.html";
-    }else{
-        modal.style.display = "block";
-    }
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-    modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        // Get the button that opens the modal
+        var btn = document.getElementById("back2");
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        
+        var b4 = document.getElementById("blank-4").value;
+        var b5 = document.getElementById("blank-5").value;
+        if(b4=="pH 5" && b5=="tallest"){
+            window.location.href="screen1.html";
+        }else{
+            modal.style.display = "block";
         }
-    }
-    </script>
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+    
 </body>
 </html>
